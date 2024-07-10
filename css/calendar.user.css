@@ -1,16 +1,11 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240624.0.1
+@version        20240706.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
 @author         Globex Designs, Inc.
-@description    A dark style for Google Calendar from the creators of the original
-				"Google Redesigned" extension. To report issue please visit:
-				https://github.com/EvHaus/google-redesigned
-				NOTE: This style does not support the right-side Keep/Reminders
-				sidebar.
 ==/UserStyle== */
 
 
@@ -208,18 +203,19 @@
 	/* GENERIC DROPDOWNS */
 	
 		/* Body */
-		.JPdR6b { background: var(--GR6) !important }
+		.JPdR6b, .YgKUfd { background: var(--GR6) !important }
 	
 			/* Row Text */
 			.OwNvm,
-			.z80M1, /* Create Page > "Going?" Dropdown */
+			.r6B9Fd .VfPpkd-rymPhb-L8ivfd-fmcmS, /* Create Page > "Going?" Dropdown */
+			.r6B9Fd .VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-M1Soyc-Bz112c .VfPpkd-rymPhb-KkROqb, /* Going? > Yes Dropdown > Icons */
 			.VfPpkd-rymPhb-fpDzbe-fmcmS /* Create Event > "Busy" */
 			{
 				color: var(--GR17) !important
 			}
 	
 			/* Separator */
-			.VfPpkd-StrnGf-rymPhb-clz4Ic { border-bottom-color: var(--GR10) !important }
+			.Iz6QOc { background: var(--GR10) !important }
 	
 			/* Keyboard Shortcut Key */
 			.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd {
@@ -227,7 +223,8 @@
 			}
 	
 			/* Selected Row */
-			.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
+			.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+			.OfXTCc.KKjvXb {
 				background: var(--GR8) !important
 			}
 	
@@ -329,33 +326,36 @@
 			
 			/* Text */
 			.mr0WL { color: var(--GR17) !important }
+            
+            /* Dropdown Text */
+            .z80M1 { color: var(--GR17) !important }
 	
 		/* MINI CALENDAR */
 	
 			/* Month */
-			.Q4y17 .r4nke { color: var(--GR17) !important }
+			.mkaajd { color: var(--GR17) !important }
 	
 			/* Day of the Week */
 			.k50Dh, .f1QMue, .IOneve { color: var(--GR14) !important }
 	
 			/* Day Circle */
-			.IOneve .r4nke { background: var(--GR1) !important }
+			.p6vobf .sOjuj { background: var(--GR1) !important }
 	
-				.IOneve .r4nke:hover { background: var(--GR7) !important }
+				.p6vobf .sOjuj:hover { background: var(--GR7) !important }
 	
 			/* Day (out of month) */
-			.IOneve { color: var(--GR10) !important }
+			.q2d9Ze .sOjuj { color: var(--GR10) !important }
 	
 			/* Day (in month) */
-			.P7rTif, /* In Sidebar */
+			.sOjuj, /* In Sidebar */
 			.pWJCO .r4nke /* In Create Event Popover */
 			{
 				color: var(--GR15) !important
 			}
 	
 			/* Day (selected) */
-			.p6vobf .r4nke, .p6vobf.pWJCO .r4nke, .p6vobf.pWJCO.q2d9Ze .r4nke {
-				background: var(--GR6) !important;
+			.pWJCO .sOjuj {
+				background-color: var(--GR6) !important;
 				color: var(--GRSELECTED) !important
 			}
 		
@@ -1037,9 +1037,9 @@
 				.CGWPk:hover { color: var(--GR19) !important }
 		
 		/* "Take meeting notes" */
-		.IPEQnf { color: var(--GR17) !important }
+		.UCosIb { color: var(--GR17) !important }
 	
-			.IPEQnf:hover { color: var(--GR19) !important }
+			.UCosIb:hover { color: var(--GR19) !important }
 	
 		/* "Find a time" */
 		.ksBjEc:not(:disabled) { color: var(--GR17) !important }
@@ -1146,27 +1146,25 @@
 		.XsU8xf { background-color: var(--GR3) !important }
 		
 		/* Action Footer */
-		.NAFvr { background: var(--GR5) !important }
+		.ldpAcc { background: var(--GR5) !important }
 	
 			/* "Going?" */
-			.YTCBlf { color: var(--GR15) !important }
+			.sgEL6b { color: var(--GR15) !important }
 		
 			/* "Yes" button */
-			.wIfg3e.KKjvXb [data-button-type="actionButton"],
-			.wIfg3e.KKjvXb [data-button-type="menuButton"],
-            .DrZ8nd.KKjvXb {
+			.qydq8.KKjvXb [data-button-type=actionButton],
+			.qydq8.KKjvXb [data-button-type=menuButton] {
 				background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
 	
-				.wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
-				.wIfg3e.KKjvXb [data-button-type="menuButton"]:hover,
-                .DrZ8nd.KKjvXb:hover {
+				.qydq8.KKjvXb [data-button-type=actionButton]:hover,
+				.qydq8.KKjvXb [data-button-type=menuButton]:hover {
 					background: var(--GR8) !important;
 				}
 		
 				/* Arrow Icon */
-				.wIfg3e.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
+				.qydq8.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
 	
 			/* Buttons */
 			.NAFvr .UQuaGc { color: var(--GR15) !important }
